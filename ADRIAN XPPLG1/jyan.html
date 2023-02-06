@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var objek = {
+            nama :"kertas",
+            warna :"putih",
+            jumlah : 2,
+            jenis_kertas :{
+                merek : "hvs",
+                ukuran :"3x3"
+            },
+            disobek : function(){
+                return("srepet")
+            },
+            tempat : function(){
+                return("lemari")
+            }
+        }
+        document.write("nama :" + objek.nama+"<br />");
+        document.write("warna :" +objek.warna+"<br />");
+        document.write("jumlah :" +objek.jumlah+"<br />");
+        document.write("jenis&merek :" +objek.jenis_kertas.merek+"<br/>");
+        document.write("jenis&ukuran :"+objek.jenis_kertas.ukuran+"<br />");
+        document.write("disobek :" +objek.disobek()+"<br />");
+        document.write("tempat :"+objek.tempat()+"<br />");
+    </script>
+</body>
+</html>

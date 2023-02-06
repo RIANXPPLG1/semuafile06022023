@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class siswa{
+            nama;
+            kelas;
+            jurusam;
+            tanggal_lahir;
+            tahun_sekarang;
+            umur;
+
+                jumlah_umur(){
+                    return this.tahun_sekarang - this.tanggal_lahir;
+                }
+                
+              
+        }
+        
+        var siswa1 = new siswa();
+        siswa1.nama = "syifa";
+        siswa1.kelas = 10;
+        siswa1.jurusam="pplg";
+        siswa1.tanggal_lahir=2007;
+        siswa1.tahun_sekarang =2023;
+        
+
+        var siswa2 = new siswa();
+        siswa2.nama = "sri";
+        siswa2.kelas= 11;
+        siswa2.jurusam="tkr";
+        siswa2.tanggal_lahir=2000;
+        siswa1.tahun_sekarang =2023;
+
+        var siswa3 = new siswa();
+        siswa3.nama= "rahayu";
+        siswa3.kelas=10;
+        siswa3.jurusam="tsm";
+        siswa3.tanggal_lahir=2022;
+        siswa1.tahun_sekarang =2023;
+
+
+        document.write("nama :" +siswa1.nama + "<br />");
+        document.write("kelas :" +siswa1.kelas + "<br />");
+        document.write("jurusan :" +siswa1.jurusam + "<br />");
+        document.write("born :" +siswa1.tanggal_lahir + "<br />");
+        document.write("umurskrg :" +siswa1.jumlah_umur() + "<br />");
+        document.write("<hr />")
+        document.write("nama :" +siswa2.nama + "<br />");
+        document.write("kelas:" +siswa2.kelas + "<br />");
+        document.write("jurusan :" +siswa2.jurusam + "<br />");
+        document.write("eborn :" +siswa2.tanggal_lahir + "<br />");
+        document.write("umurskrg :" +siswa2.jumlah_umur() + "<br />");
+        document.write("<hr />")
+        document.write("nama :" +siswa3.nama + "<br />");
+        document.write("kelas :" +siswa3.kelas + "<br />");
+        document.write("jurusan :" +siswa3.jurusam + "<br />");
+        document.write("eborn :" +siswa3.tanggal_lahir + "<br />");
+        document.write("umurskrg :" +siswa3.jumlah_umur() + "<br />");
+        document.write("<hr />")
+    </script>
+</body>
+</html>

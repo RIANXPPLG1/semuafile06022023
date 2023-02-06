@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //list data siswa x pplg 1
+        //tampilkan:nama,kelas,umur,nilai
+
+        var list_nama = [
+            {
+                nama : "adrian",
+                kelas : "10",
+                umur : 15,
+                nilai : 80
+            },
+            {
+                nama :"hamzah",
+                kelas:"10",
+                umur :16,
+                nilai:60
+            },
+            {
+                nama :"jajang",
+                kelas:"12",
+                umur :17,
+                nilai:90    
+            }
+        ]
+        
+        for(i in list_nama){
+            document.write("perulangan <br />");
+        }
+
+        var list_nama = ["siti", "azfar", "aulia"];
+        list_nama.forEach( nama => {
+            document.write(nama + "<br />");
+        });
+
+            //menampilkan semua data 
+            document.write("<h1>list siswa</h1>");
+        document.write("nama :" +list_nama[0].nama + '<br/>');
+        document.write("kelas :" +list_nama[0].kelas + '<br/>');
+        document.write("umur:" +list_nama[0].umur + '<br/>');
+        document.write("nilai :" +list_nama[0].nilai + '<br/>');
+        document.write('<hr/>');
+        document.write("nama :" +list_nama[1].nama + '<br/>');
+        document.write("kelas :" +list_nama[1].kelas + '<br/>');
+        document.write("umur:" +list_nama[1].umur + '<br/>');
+        document.write("nilai :" +list_nama[1].nilai + '<br/>');
+        document.write('<hr/>');
+        document.write("nama :" +list_nama[2].nama + '<br/>');
+        document.write("kelas :" +list_nama[2].kelas + '<br/>');
+        document.write("umur:" +list_nama[2].umur + '<br/>');
+        document.write("nilai :" +list_nama[2].nilai + '<br/>');
+    </script>
+</body>
+</html>
