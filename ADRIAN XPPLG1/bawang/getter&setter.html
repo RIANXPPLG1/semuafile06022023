@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class siswa {
+            #nama="siti zahrotun"
+            #kkm=75;
+            // kkm tidak boleh kurang dari 10
+            set nama (nama){
+                this.#nama = nama;
+            }
+            get nama (){
+                return this.#nama;
+            }
+            get kkm(){
+                return this.#kkm;
+            }
+            set kkm(kkm){
+                // kalau kkm kurang dari 10 
+                // tasmpilkan kkm harus lebih dari 10
+
+                if(kkm < 10){
+                    console.log("cuih boddohhh");
+                    return;
+                }else{
+                    console.log("selamat anda lulus");
+                    return;
+                }
+                this.#kkm = kkm;
+            }
+        }
+
+
+           var siti = new siswa();
+           siti.nama="siti";
+         siti.kkm=5;
+        //    console.log(siti.nama)
+           console.log(siti.kkm) 
+    </script>
+</body>
+</html>

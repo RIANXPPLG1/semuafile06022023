@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class user{
+            #username="adrian";
+            #password; //pasword panjang nya kurang dari 8 tampilan ********8
+            #umur=15;//umur tidak boleh kurang dari 18
+            #email="";
+            set username (username){
+                this.username=name;
+            } 
+            get username (){
+                return this.#username;
+            }
+            get password(){
+               
+                
+                return this.#password;
+            }
+            set password(password){
+               if(password.length < 8){
+                document.write("kurang cuy")
+               }
+                this.#password=password;
+            }
+            
+        }
+
+        var adrian1 = new user();
+        
+        adrian1.username
+        adrian1.password="22222";
+        document.write(adrian1.username+"<br />")
+        document.write(adrian1.password.length)
+    </script>
+</body>
+</html>
