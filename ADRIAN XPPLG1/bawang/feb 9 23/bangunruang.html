@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // bangun ruang 
+        // volume
+        // * balok p * l * t extends bangun ruang
+        // volume
+        // kubus  s*s*s
+        // volume
+        // limas_segi_empat volume
+        // volume
+        // tabung
+        // volume
+
+  
+        class bangun_ruang {
+            p = 30;
+            l = 24;
+            t = 13;
+            
+
+            
+        }
+        class balok extends bangun_ruang {
+            volume(){
+                return this.p * this.l * this.t 
+            }
+        
+            s = 10
+            kubus(){
+                return this.s * this.s * this.s
+            }
+        
+            V = 3;
+            L = (10 * 10);
+            T = 8
+            limas_segi_empat(){
+                return this.V * this.L * this.T
+            }
+        
+            N = 8;
+            R = 11;
+            TI = 31;
+            tabung(){
+                return this.N * this.R * this.TI
+            }
+        
+    }
+
+         var balok1 = new balok();
+        document.write(balok1.volume()+'<br />')
+        document.write(balok1.kubus()+'<br />')
+        document.write(balok1.limas_segi_empat()+'<br />')
+        document.write(balok1.tabung()+'<br />')
+
+    </script>
+</body>
+</html>
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //oop/pilar
+        //1.inheritance/pewarisan
+        //2.enkapsulasi/accaesmodifer
+        //3.
+        //4.
+
+        class siswa {
+            nama_belakang;
+            nama_depan;
+            nama_lengkap;
+            nilai_mtk;
+            nilai_dlg;
+            kkm=75;
+
+
+
+            cek_kelulusan(){
+                var nilai =this.nilai_mtk + this.nilai_dlg /2;
+                if(nilai > this.#kkm){
+                    return 'lulus';
+                }else{
+                    return "tidak lulus";
+                }
+            }
+
+            sapa(){
+                return "haloo"+ this.nama_belakang;
+            }
+            
+        }
+
+        var siti = new siswa();
+        siti.nama_belakang = "siti";
+        siti.nama_depan = 'zahrotul';
+        siti.nilai_dlg = 50;
+        siti.nilai_mtk = 50;
+        siti.kkm =10
+
+        console.log(siti.sapa());
+        console.log(siti.cek_kelulusan())
+
+    </script>
+</body>
+</html>

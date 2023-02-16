@@ -9,19 +9,35 @@
 <body>
     <script>
         class siswa{
-            nama;
-            nis;
-            sekolah;
-            mapel; 
+            nama = "maman";
+            nis = 25389243;
+            sekolah = "mutu";
+            mapel = "banyak"
 
-            brlajar(){
-                return "raden bljarrrrrr";
+            belajar(){
+                return "niceeee"
+
             }
         }
-            class siswarpl extends siswa{
-                belajar.belajar_profuktiv
 
+        class siswaRPL extends siswa{
+            nama = "jajang";
+            nis = 123456789;
+            sekolah = "mutu";
+            mapel = "banyak";
+            jurusan = "pplg";
+            mapel_produktif = "mtk";
+
+            
+            belajar_produktif(){
+                return "bagusss"
             }
+        }
+
+        var manusia = new siswaRPL();
+        document.write(manusia.nama)
+        document.write(manusia.belajar())
+
     </script>
 </body>
 </html>
