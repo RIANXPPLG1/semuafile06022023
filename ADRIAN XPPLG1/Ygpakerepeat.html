@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+ <html lang="en"> 
+ <head> 
+     <meta charset="UTF-8"> 
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <title>Document</title> 
+ </head> 
+ <body> 
+     <script> 
+         class user{ 
+             #username; 
+             #password; //pasword panjang nya kurang dari 8 tampilan ********8 
+             #umur;//umur tidak boleh kurang dari 18 
+             #email; 
+             set username (username){ 
+                 this.#username=username; 
+             }  
+             get username (){ 
+                 return this.#username; 
+             } 
+             get password(){ 
+                 
+                  
+                 return this.#password; 
+             } 
+             set password(password){ 
+                if(password.length< 8){ 
+                 document.write("kurang cuy harusnya  password 8 huruf :v"+"<br/>") 
+                } 
+                 this.#password=password; 
+             } 
+             
+             get umur(){
+               return this.#umur;
+             }
+            set umur(umur){
+            if(umur < 18){
+              document.write("kamu belum cukup umur sayang"+"<br/>"+"<hr/>")
+            }
+              this.#umur=umur;
+            }
+           get email(){
+             return this.#email;
+           }
+           set email(email){
+             this.#email=email;
+           }
+         } 
+  
+         var adrian1 = new user(); 
+          
+         adrian1.username="Adrian Hamzah";
+         adrian1.password="adrian"; 
+         adrian1.pass="*". repeat (adrian1.password.length)
+         adrian1.umur=16;
+         adrian1.email="adrianygpunyaotak@gmail.com";
+         adrian1.asteris='';
+         
+         document.write("username :"+adrian1.username+"<br/>") 
+       //  document.write(adrian1.password.length +"<br/>") 
+         document.write("password :"+adrian1.pass+"<br/>") 
+         document.write("umur :"+adrian1.umur+"<br/>") 
+         document.write("email :"+adrian1.email) 
+
+     </script> 
+ </body> 
+ </html>
